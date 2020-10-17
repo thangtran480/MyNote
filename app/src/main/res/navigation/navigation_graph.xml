@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/ListNoteFragment">
+
+    <fragment
+        android:id="@+id/ListNoteFragment"
+        android:name="com.thangtv.mynote.ui.fragment.ListNoteFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_list_note" >
+        <action
+            android:id="@+id/action_ListNoteFragment_to_AddNoteFragment"
+            app:destination="@id/AddNoteFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/AddNoteFragment"
+        android:name="com.thangtv.mynote.ui.fragment.AddNoteFragment"
+        android:label="fragment_blank2"
+        tools:layout="@layout/fragment_add_note" >
+
+        <action
+            android:id="@+id/action_AddNoteFragment_to_ListNoteFragment"
+            app:destination="@id/ListNoteFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/navigation_graph"
+            app:popUpToInclusive="true"/>
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="priority"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+
+</navigation>

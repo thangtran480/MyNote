@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_repeat_none"
+        android:title="@string/repeat_none" />
+    <item
+        android:id="@+id/item_repeat_daily"
+        android:title="@string/repeat_daily" />
+
+    <item
+        android:id="@+id/item_repeat_every_week"
+        android:title="@string/repeat_every_week" />
+
+    <item
+        android:id="@+id/item_repeat_monthly"
+        android:title="@string/repeat_monthly" />
+
+    <item
+        android:id="@+id/item_repeat_yearly"
+        android:title="@string/repeat_yearly" />
+
+</menu>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyNote</string>
+    <string name="repeat_none">Không</string>
+    <string name="repeat_daily">Hàng ngày</string>
+    <string name="repeat_every_week">Hàng tuần</string>
+    <string name="repeat_monthly">Hàng tháng</string>
+    <string name="repeat_yearly">Hàng năm</string>
+    <string name="title_title">Tiêu đề</string>
+    <string name="title_description">Mô tả</string>
+    <string name="title_start">Bắt đầu</string>
+    <string name="title_end">Kết thúc</string>
+    <string name="title_repeat">Lặp lại</string>
+    <string name="title_time_transport">Thời gian di chuyển</string>
+    <string name="title_alert">Cảnh báo</string>
+    <string name="title_status">Hiển thị dưới dạng</string>
+    <string name="btn_save">Save</string>
+    <string name="title_note">Ghi chú</string>
+
+</resources>
