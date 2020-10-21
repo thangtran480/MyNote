@@ -36,12 +36,10 @@ class NoteAdapter(val listener: OnClickItemViewNote, var allNote: List<Note> = l
     class NoteHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         private val tvTitle = itemView.tv_title
-        private val tvPriority = itemView.tv_priority
         private val tvDescription = itemView.tv_description
 
         fun bind(note: Note){
             tvTitle.text = note.title
-            tvPriority.text = note.priority.toString()
             tvDescription.text = note.description
         }
     }

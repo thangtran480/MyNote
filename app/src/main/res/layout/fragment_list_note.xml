@@ -4,24 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragment.ListNoteFragment">
+    tools:context=".ui.fragment.ListNoteFragment"
+    android:background="#FD9D9D">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_list_note"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
-        tools:itemCount="10"
+        tools:itemCount="5"
         tools:listitem="@layout/note_item" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <Button
         android:id="@+id/fab_add"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="10dp"
-        android:src="@drawable/ic_add" />
+        android:background="@drawable/bg_btn_add_task"
+        android:layout_margin="16dp"
+        android:drawableStart="@drawable/ic_add"
+        android:gravity="left|center_vertical"
+        android:textColor="#FFFFFF"
+        android:paddingStart="16dp"
+        android:text="Thêm tác vụ"
+        android:textAllCaps="false"
+        tools:ignore="RtlHardcoded" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

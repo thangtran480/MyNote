@@ -138,7 +138,7 @@
                         app:layout_constraintBottom_toBottomOf="@id/tv_title_start"
                         app:layout_constraintEnd_toStartOf="@id/tv_start_time_alert"
                         app:layout_constraintTop_toTopOf="@id/tv_title_start"
-                        tools:text="ngày 9 tháng 19 năm 2020"
+                        tools:text="18/10/2020"
                         android:onClick="@{() -> viewModel.startDateAlertPicker.show()}"/>
 
                     <TextView
@@ -176,7 +176,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
-                        tools:text="ngày 9 tháng 19 năm 2020"
+                        tools:text="18/10/2020"
                         app:layout_constraintBottom_toBottomOf="@id/tv_title_end"
                         app:layout_constraintEnd_toStartOf="@id/tv_start_time_alert"
                         app:layout_constraintTop_toTopOf="@id/tv_title_end"
@@ -216,6 +216,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@{Utils.INSTANCE.convertRepeat(context, note.repeat)}"
+                        tools:text="Không"
                         app:layout_constraintBottom_toBottomOf="@id/tv_title_repeat"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@id/tv_title_repeat" />
@@ -338,10 +339,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/btn_save"
+                    android:background="@drawable/custom_button"
                     android:textAllCaps="false"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_margin="16dp"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
